@@ -5,7 +5,7 @@
 - Crie um repositório no seu GitHub **sem citar nada relacionado a Paggue**.
 - Faça seus commits no seu repositório.
 - Envie o link do seu repositório para o email **dev@paggue.io**.
-- Dê uma olhada nos [Materiais úteis](#materiais-úteis).
+- Dê uma olhada nos [links](#links).
 - Fique à vontade para perguntar qualquer dúvida no email **dev@paggue.io**.
 
 ### Como é que eu envio o email?
@@ -74,3 +74,18 @@ Em nosso sistema temos empresas e usuários que administram essas empresas.
 
     - Os serviços de terceiros podem está eventualmente indisponível
 
+
+> Importante ressaltar que esse teste é qualitativo e não quantitativo, vamos levar em consideração a qualidade do código e não o número de etapas concluídas.
+
+> Não iremos avaliar
+> - Frontend (só avaliaremos a (API Restful)
+> - Processo de Autenticação
+> - Cadastro de administrador e empresa
+
+## Links
+- [Paggue](https://paggue.io/)
+- [API Restful](https://www.devmedia.com.br/rest-tutorial/28912)
+- [Laravel](https://laravel.com/)
+
+
+Boa sorte!
