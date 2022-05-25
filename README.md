@@ -8,7 +8,7 @@
 - Dê uma olhada nos [links](#links).
 - Fique à vontade para perguntar qualquer dúvida no email **dev@paggue.io**.
 
-### Como é que eu envio o email?
+### Como é que eu envio o desafio por email?
 
 #### **Desafio Back-end**
 
@@ -78,9 +78,8 @@ Em nosso sistema temos empresas e usuários que administram essas empresas.
 > Importante ressaltar que esse teste é qualitativo e não quantitativo, vamos levar em consideração a qualidade do código e não o número de etapas concluídas.
 
 > Não iremos avaliar
-> - Frontend (só avaliaremos a (API Restful)
+> - Frontend (só avaliaremos a API Restful)
 > - Processo de Autenticação
-> - Cadastro de administrador e empresa
 
 ## Links
 - [Paggue](https://paggue.io/)
