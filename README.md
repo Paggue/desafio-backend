@@ -58,42 +58,35 @@ Sim, mas fique avontade para escolher o framework.
 
 ## E qual é o meu desafio?
 
-Em nossa rotina vemos muitas empresas realizando suas vendas em máquinas de cartão ou de maneira online e nesse processo
-temos sistemas que gerenciam essas vendas, recebimentos, saldos e pagamentos.
-
-Em nosso sistema temos empresas e usuários que administram essas empresas.
+Atualmente o mercado de eventos vem crescendo muito, e um sistema de gestão para o mesmo é de grande valia, podendo ter chance de se destacar no mercado.
+Com isso o sistema deve possuir:
 
 - Autenticação e permissão, os usuários devem poder se autenticar e acessar apenas recursos especificos
   que seram determinados pelo perfil de acesso. [Permissions](#links)
 
-- Para a empresas é preciso do seguinte, CNPJ, Razão social, Nome fantasia, telefone e email, cada empresa deve ser
-  única (CNPJ)
+- Tipos de perfis de acesso: admin, produtor de eventos e cliente
 
-- Para os administradores, precisamos do Nome Completo, CPF, e-mail e Senha. CPF/CNPJ e e-mails devem ser únicos no
-  sistema. Sendo assim, seu sistema deve permitir apenas um cadastro com o mesmo CPF ou endereço de e-mail.
+- Criar evento, setores, lote, ingressos e cupom de desconto
 
-- Apenas administradores podem solicitar saques(pagamento) para uma determinada empresa.
-
-- Valide se a empresa tem saldo antes de criar um pagamento.
-
-- O saque só pode ser realizado para uma conta verificada.
+- Venda de ingressos online, integrando com o pix web da Paggue para realizar o pagamento
 
 - Após o Pagamento criado o mesmo deve ser processado em uma sub-rotina [Job](https://laravel.com/docs/9.x/queues)
 
-- O pagamento deve ser uma transação (ou seja, revertido em qualquer caso de inconsistência) e o dinheiro deve voltar
-  para o saldo da empresa.
-
-- Após o pagamento processado deve ser enviado ao administrador uma notificação (email, sms) enviada por um serviço de
+- Após o pagamento processado deve ser enviado ao administrador e ao cliente uma notificação (email, sms) por um serviço de
   terceiro.
+
+- Deve ser enviado um email também ao administrador após a criação de um evento por qualquer produtor
 
 - Integração com a Paggue
   - Sua aplicação deve utilizar a Api da paggue para gerar o PIX para seu cliente realizar o pagamento do Produto/ingresso
   - Sua aplicação deve está pronta para receber notificações referente ao pagamento realizado por seu cliente e finaliazar o pedido.
-  
 
 - Os serviços de terceiros podem está eventualmente indisponível
 
-#### Para realizar a integração com a Paggue você deve possuir um cadastro. 
+- **Bonus:** Aparecer somente um lote por setor, enquanto haja ingresso disponivel para ele, caso ocorra seu esgotamento ou passar a data de seu encerramento,
+  o proximo lote deve ficar disponivel, caso exista
+
+#### Para realizar a integração com a Paggue você deve possuir um cadastro.
 - Acesse [portal.paggue.io/cadastro](https://portal.paggue.io/cadastro) e faça seu cadastro
 - Acesse o menu **configurações->integraçoes** e gere suas credenciais.
 - Documentação da Api [go.paggue.io/developers](https://go.paggue.io/developers)  (Billing order)
@@ -107,7 +100,7 @@ Em nosso sistema temos empresas e usuários que administram essas empresas.
 > Importante ressaltar que esse teste é qualitativo e não quantitativo, vamos levar em consideração a qualidade do
 > código e não o número de etapas concluídas;
 
-> Porem número de etapas entregues com qualidade vai ser um ponto avaliativo para a senioridade  
+> Porem número de etapas entregues com qualidade vai ser um ponto avaliativo para a senioridade
 
 > Não iremos avaliar
 > - Frontend (só avaliaremos a API Restful)
