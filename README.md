@@ -75,16 +75,16 @@ Com isso o sistema deve possuir:
 - Após o pagamento processado deve ser enviado ao administrador e ao cliente uma notificação (email, sms) por um serviço de
   terceiro.
 
-- Deve ser enviado um email também ao administrador após a criação de um evento por qualquer produtor
-
 - Integração com a Paggue
   - Sua aplicação deve utilizar a Api da paggue para gerar o PIX para seu cliente realizar o pagamento do Produto/ingresso
   - Sua aplicação deve está pronta para receber notificações referente ao pagamento realizado por seu cliente e finaliazar o pedido.
 
 - Os serviços de terceiros podem está eventualmente indisponível
 
-- **Bonus:** Aparecer somente um lote por setor, enquanto haja ingresso disponivel para ele, caso ocorra seu esgotamento ou passar a data de seu encerramento,
+####  **Bonus:**
+- Aparecer somente um lote por setor, enquanto haja ingresso disponivel para ele, caso ocorra seu esgotamento ou passar a data de seu encerramento,
   o proximo lote deve ficar disponivel, caso exista
+- Deve ser enviado um email também ao administrador após a criação de um evento por qualquer produtor
 
 #### Para realizar a integração com a Paggue você deve possuir um cadastro.
 - Acesse [portal.paggue.io/cadastro](https://portal.paggue.io/cadastro) e faça seu cadastro
