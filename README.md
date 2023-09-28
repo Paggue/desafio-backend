@@ -61,13 +61,16 @@ Sim, mas fique avontade para escolher o framework.
 Atualmente o mercado de eventos vem crescendo muito, e um sistema de gestão para o mesmo é de grande valia, podendo ter chance de se destacar no mercado.
 Com isso o sistema deve possuir:
 
+- Signup
+  - Telefone, cpf/cnpj, senha, nome
 - Autenticação e permissão, os usuários devem poder se autenticar e acessar apenas recursos especificos
   que seram determinados pelo perfil de acesso. [Permissions](#links)
 
 - Tipos de perfis de acesso: admin, produtor de eventos e cliente
 
-- CRUD produtor, evento, setores, lote, ingressos e cupom de desconto:
-  - **Produtor:** agencia responsável por realizar os eventos.
+- CRUDs: produtor, evento, setores, lote, ingressos e cupom de desconto:
+  - **Produtor:** agencia responsável por realizar os eventos. Esse deve possuir acesso ao sistema para gerenciar os eventos
+  - O evento deve conter um banner, esse aquivo deve ser salvo em nuvem quando a aplicação estiver em produção (recomendamos o uso da AWS S3) 
 
 - Venda de ingressos online, integrando com o pix web da Paggue para realizar o pagamento
 
@@ -91,6 +94,7 @@ Com isso o sistema deve possuir:
 - Acesse [portal.paggue.io/cadastro](https://portal.paggue.io/cadastro) e faça seu cadastro
 - Acesse o menu **configurações->integraçoes** e gere suas credenciais.
 - Documentação da Api [go.paggue.io/developers](https://go.paggue.io/developers)  (Billing order)
+- Para o recebimento dos webhooks no seu software fique atento para ralizar a verificação da assinatura envida no header.
 
 
 ### Deixe no seu Readme intruções de como rodar seu projeto, e como utilizar sua aplicação.
