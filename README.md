@@ -66,18 +66,19 @@ Com isso o sistema deve possuir:
 
 - Tipos de perfis de acesso: admin, produtor de eventos e cliente
 
-- Criar evento, setores, lote, ingressos e cupom de desconto
+- CRUD produtor, evento, setores, lote, ingressos e cupom de desconto:
+  - **Produtor:** agencia responsável por realizar os eventos.
 
 - Venda de ingressos online, integrando com o pix web da Paggue para realizar o pagamento
 
-- Após o Pagamento criado o mesmo deve ser processado em uma sub-rotina [Job](https://laravel.com/docs/9.x/queues)
+- Após o Pagamento criado o mesmo deve ser processado em uma sub-rotina [Job](https://laravel.com/docs/10.x/queues)
 
 - Após o pagamento processado deve ser enviado ao administrador e ao cliente uma notificação (email, sms) por um serviço de
   terceiro.
 
 - Integração com a Paggue
   - Sua aplicação deve utilizar a Api da paggue para gerar o PIX para seu cliente realizar o pagamento do Produto/ingresso
-  - Sua aplicação deve está pronta para receber notificações referente ao pagamento realizado por seu cliente e finaliazar o pedido.
+  - Sua aplicação deve está pronta para receber notificações(webhooks) referente ao pagamento realizado por seu cliente e finaliazar o pedido.
 
 - Os serviços de terceiros podem está eventualmente indisponível
 
