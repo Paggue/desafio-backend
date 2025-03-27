@@ -80,7 +80,7 @@ Com isso o sistema deve possuir:
 - Integração com a Paggue
     - Sua aplicação deve utilizar a Api da paggue para gerar o PIX para seu cliente realizar o pagamento do
       Produto/ingresso
-    - Sua aplicação deve está pronta para receber notificações(webhooks) referente ao pagamento realizado por seu
+    - Sua aplicação deve estar pronta para receber notificações(webhooks) referente ao pagamento realizado por seu
       cliente e finaliazar o pedido.
 
 - Os serviços de terceiros podem está eventualmente indisponível
