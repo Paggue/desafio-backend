@@ -19,15 +19,13 @@
 >Link do repositório
 >
 >Link da API
->
->Currículo em anexo
 
 ### Tenho que utilizar framework?
 
 Sim, mas fique avontade para escolher o framework.
 
 - Lembre-se, decida por aquele com o qual estará mais seguro em apresentar e conversar com a gente na entrevista
-- O [Laravel 10](https://laravel.com/) será um grande diferencial, então **sugerimos** que utilize.
+- O [Laravel](https://laravel.com/) será um grande diferencial, então **sugerimos** que utilize.
 
 ## O que fazer para mandar bem?
 
@@ -52,7 +50,7 @@ Sim, mas fique avontade para escolher o framework.
 - Uso de Design Patterns
 - Documentação
 - Proposta de melhoria na arquitetura
-- **PHP/Laravel 10**
+- **PHP/Laravel**
 - Conhecimento da AWS (S3, EC2, ELB, Lambda...)
 - Ambiente de desenvolvimento com xdebug no docker
 
@@ -74,31 +72,38 @@ Com isso o sistema deve possuir:
 
 - Venda de ingressos online, integrando com o pix web da Paggue para realizar o pagamento
 
-- Após o Pagamento criado o mesmo deve ser processado em uma sub-rotina [Job](https://laravel.com/docs/10.x/queues)
+- Após o Pagamento criado o mesmo deve ser processado em uma sub-rotina [Job](https://laravel.com/docs/12.x/queues)
 
-- Após o pagamento processado deve ser enviado ao administrador e ao cliente uma notificação (email, sms) por um serviço de
+- Após o pagamento processado deve ser enviado ao administrador e ao cliente uma notificação (email, sms) por um serviço
+  de
   terceiro.
 
 - Integração com a Paggue
-  - Sua aplicação deve utilizar a Api da paggue para gerar o PIX para seu cliente realizar o pagamento do Produto/ingresso
-  - Sua aplicação deve está pronta para receber notificações(webhooks) referente ao pagamento realizado por seu cliente e finaliazar o pedido.
+    - Sua aplicação deve utilizar a Api da paggue para gerar o PIX para seu cliente realizar o pagamento do
+      Produto/ingresso
+    - Sua aplicação deve está pronta para receber notificações(webhooks) referente ao pagamento realizado por seu
+      cliente e finaliazar o pedido.
 
 - Os serviços de terceiros podem está eventualmente indisponível
 
-####  **Bonus:**
-- Aparecer somente um lote por setor, enquanto haja ingresso disponivel para ele, caso ocorra seu esgotamento ou passar a data de seu encerramento,
+#### **Bonus:**
+
+- Aparecer somente um lote por setor, enquanto haja ingresso disponivel para ele, caso ocorra seu esgotamento ou passar
+  a data de seu encerramento,
   o proximo lote deve ficar disponivel, caso exista
 - Deve ser enviado um email também ao administrador após a criação de um evento por qualquer produtor
 
-#### Para realizar a integração com a Paggue você deve possuir um cadastro.
-- Acesse [portal.paggue.io/cadastro](https://portal.paggue.io/cadastro) e faça seu cadastro
-- Acesse o menu **configurações->integraçoes** e gere suas credenciais.
-- Documentação da Api [go.paggue.io/developers](https://go.paggue.io/developers)  (Billing order)
-- Para o recebimento dos webhooks no seu software fique atento para ralizar a verificação da assinatura envida no header.
+#### **Todas etapas da implementação deve conter testes automátizados**
 
+#### Para realizar a integração com a Paggue você deve possuir um cadastro.
+
+- Acesse [paggue.io](https://register.paggue.io) e faça seu cadastro
+- Acesse o menu **configurações->integraçoes** e gere suas credenciais.
+- Documentação da Api [go.paggue.io/developers](https://go.paggue.io/developers)
+- Para o recebimento dos webhooks no seu software fique atento para ralizar a verificação da assinatura envida no
+  header.
 
 ### Deixe no seu Readme intruções de como rodar seu projeto, e como utilizar sua aplicação.
-
 
 ## Atenção
 
