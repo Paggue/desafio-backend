@@ -76,7 +76,6 @@ Com isso o sistema deve possuir:
 
 - Após o pagamento processado deve ser enviado ao administrador e ao cliente uma notificação (email, sms) por um serviço
   de
-  terceiro.
 
 - Integração com a Paggue
     - Sua aplicação deve utilizar a Api da paggue para gerar o PIX para seu cliente realizar o pagamento do
