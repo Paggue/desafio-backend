@@ -87,7 +87,7 @@ Com isso o sistema deve possuir:
 
 #### **Bonus:**
 
-- Aparecer somente um lote por setor, enquanto haja ingresso disponivel para ele, caso ocorra seu esgotamento ou passar
+- Aparecer somente um lote por setor, enquanto houver ingresso disponível para ele, caso ocorra seu esgotamento ou passar
   a data de seu encerramento,
   o proximo lote deve ficar disponivel, caso exista
 - Deve ser enviado um email também ao administrador após a criação de um evento por qualquer produtor
