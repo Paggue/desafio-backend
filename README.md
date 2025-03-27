@@ -75,7 +75,7 @@ Com isso o sistema deve possuir:
 - Após o Pagamento criado o mesmo deve ser processado em uma sub-rotina [Job](https://laravel.com/docs/12.x/queues)
 
 - Após o pagamento processado deve ser enviado ao administrador e ao cliente uma notificação (email, sms) por um serviço
-  de
+  de terceiros.
 
 - Integração com a Paggue
     - Sua aplicação deve utilizar a Api da paggue para gerar o PIX para seu cliente realizar o pagamento do
