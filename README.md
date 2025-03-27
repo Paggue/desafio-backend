@@ -122,3 +122,24 @@ Com isso o sistema deve possuir:
 - [Bref](https://bref.sh/)
 
 Boa sorte!
+
+### 🔹 Requisitos Essenciais:
+> - ✅ Experiência com Laravel (APIs RESTful e aplicações web).
+> - ✅ Conhecimento em bancos de dados relacionais (MySQL, PostgreSQL, SQL Server).
+> - ✅ Experiência com Eloquent ORM e otimização de queries.
+> - ✅ Testes automatizados com PHPUnit/Pest.
+> - ✅ Autenticação e segurança com Laravel Sanctum, Passport, JWT.
+> - ✅ Conhecimento de arquitetura MVC, SOLID e boas práticas.
+> - ✅ Versionamento com Git/GitHub (Git Flow).
+> - ✅ Trabalhar com filas e jobs assíncronos (Redis, Laravel Queues).
+> - ✅ Experiência na construção de APIs (documentação, versionamento, rate limiting).
+
+### 🚀 Diferenciais:
+> - 🔹 Experiência com Laravel Octane para alta performance.
+> - 🔹 Conhecimento em microserviços e arquitetura distribuída.
+> - 🔹 Experiência com Docker e containers.
+> - 🔹 Conhecimento em CI/CD para automação de deploys.
+> - 🔹 Aplicação de design patterns (Repositório, Service Layer, Factory).
+> - 🔹 Mensageria com Kafka, SQS para comunicação assíncrona.
+> - 🔹 Conhecimento em DevOps (AWS, Kubernetes, Terraform).
+
